@@ -1,96 +1,101 @@
-# ⚡ TrueTask | Task, Course & Assignment Tracker
+<div align="center">
 
-TrueTask is a premium, single-panel academic workspace dashboard that combines an interactive **Eisenhower Decision Matrix**, course management, category tracking, dynamic timelines, and a completed archives drawer. 
+  <img src="icon.svg" width="96" height="96" alt="TrueTask Logo" />
 
-Built using standard modern web APIs (HTML5, Vanilla CSS, and modular ES6 JavaScript), TrueTask has **zero external build dependencies**, runs completely offline, and can be installed as a native Progressive Web Application (PWA) on desktop or mobile.
+  # 🌟 TrueTask
 
----
+  ### **The Ultimate Frosted-Glass Tasks & Daily Habits Workspace**
 
-## ✨ Key Features
+  *A premium, high-fidelity Progressive Web Application (PWA) designed to track academic assignments, organize tasks, and maintain daily habit consistency with 100% offline-first capability.*
 
-### 📅 Interactive Eisenhower Decision Matrix
-* **Priority Quadrants:** Active tasks are color-coded in a clean 2x2 grid representing:
-  * **Q1: Important & Urgent** (Rose gradient / Crimson border)
-  * **Q2: Important & Not Urgent** (Amber gradient / Orange border)
-  * **Q3: Urgent & Not Important** (Indigo gradient / Blue border)
-  * **Q4: Not Urgent & Not Important** (Emerald gradient / Teal border)
-* **Fluid Drag & Drop:** Drag tasks natively between quadrants to instantly update task priorities. State persists in local storage on release.
+  ---
 
-### ⏱️ Dynamic Timeline Calculations
-* Real-time remaining time badges computed locally:
-  * `🔴 Overdue by X days / hours` (with animated pulse-border alerts)
-  * `🟡 Due today` or `🟡 Due in X hours`
-  * `🟢 Tomorrow`
-  * `🟢 X days left` (e.g. "3 days left", "4 days left")
-  * `⚪ No Deadline`
+  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
+  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
+  [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
+  [![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=progressive-web-apps&logoColor=white)](#)
+  [![Offline-First](https://img.shields.io/badge/Offline--First-0052CC?style=for-the-badge&logo=offline&logoColor=white)](#)
 
-### 🔄 Multi-View Layout
-* **Matrix View:** Visually maps items by Eisenhower priority.
-* **Timeline List:** Groups tasks chronologically (*Overdue*, *Due Today*, *Due Tomorrow*, *Upcoming*, and *No Deadline*).
-* Swaps views instantly with smooth CSS transitions.
+  ---
 
-### 🏆 Completed Archives Slide-out Drawer
-* A separate, elegant slide-out drawer houses completed tasks.
-* Tracks historical completion times, sorts items (newest first), and provides instant controls to **restore** items to active status or **permanently delete** them.
+</div>
 
-### 💻 Course & Category Customizer
-* Create custom classes (e.g., CS 301, MATH 202) with dynamic color themes.
-* Quick-filter the entire dashboard by course with a single click.
-* Safe-delete course references gracefully redirects tasks back to the default "General" category.
+## 🌌 Project Essence
+
+TrueTask is a state-of-the-art, glassmorphic space-slate dashboard that bridges the gap between academic progress and personal daily habits. Featuring fluid animations, native drag-and-drop mechanics, dynamic SVG area line charts, and an elegant context-aware UI, TrueTask offers a stunning aesthetic experience without relying on any external CSS libraries, compilers, or live servers.
 
 ---
 
-## 🛠️ Offline-First Architecture
+## ✨ Features That Wow
 
-TrueTask is designed to be **100% self-contained and run completely without internet**:
-* **No Icon CDNs:** All dashboard icons are custom vector graphics (`SVG`) directly embedded in the HTML markup.
-* **Offline Font Stack:** Gracefully falls back to high-grade local system fonts (`'Inter'`, `system-ui`, `-apple-system`, `BlinkMacSystemFont`) if Google Fonts cannot be fetched.
-* **PWA Service Worker Caching:** Integrates `sw.js` using a **Cache-First** retrieval model. Once launched once, the app, manifest, and icons cache locally on your device for zero-latency, offline startup.
-* **Local Storage Sandbox:** Your courses, tasks, and history are kept entirely secure and private, stored inside your browser's local memory (`localStorage`).
+### 🔄 Dual-Action Workspace Morphing
+Seamlessly transition between Academic Tasks and Daily Routines. TrueTask morphs its layout dynamically:
+*   **Academic Mode:** Displays task counts, **COURSES** customization selectors, academic timeline filters, and the Completed Archives drawer launcher.
+*   **Daily Routines Mode:** Changes stats cards into a **Routine Statistics** summary (streaks, perfect days, habit ratio), swaps courses for dynamic **CATEGORIES** list filters, and updates the footer navigation to fade out archiving controls for a focused mind.
+
+### 📐 Interactive Eisenhower Decision Matrix
+*   Intuitively divides tasks into **four priority quadrants**:
+    *   `Q1` — 🔴 **Urgent & Important** (Do Immediately)
+    *   `Q2` — 🟡 **Important & Not Urgent** (Plan & Schedule)
+    *   `Q3` — 🔵 **Urgent & Not Important** (Quick Delegate)
+    *   `Q4` — 🟢 **Not Urgent & Not Important** (Eliminate/Backlog)
+*   **Native Drag & Drop:** Grab tasks and drop them directly into new quadrants. Priority states and visual color schemes transition instantly.
+
+### 📈 Dynamic SVG Area Line Chart
+*   A full-width, glassmorphic rolling **Weekly Consistency Graph**.
+*   Built using native browser SVG nodes and vector path rendering.
+*   Features dashed horizontal grids (`0%`, `50%`, `100%`), linear neon gradient strokes, transparent area fills, glowing trend markers, and hover tooltips showing precise completion ratios.
+
+### 🏷️ Dynamic Sidebar Category & Course Managers
+*   Create and customize courses or habit categories directly from the sidebar.
+*   Select tailored color themes and watch the dynamic active counts compute in real-time.
+*   Includes built-in validation preventing deletion of the core default categories (`💻 Coding`, `🏃 Health`, `📚 Learning`, `⚙️ Daily Life`).
+
+### 📱 Full PWA Desktop Installation
+*   **Installable App:** Manifest and vector bindings allow you to install TrueTask directly onto your system dock as a native standalone application.
+*   **Service Worker Caching:** Integrates `sw.js` managing cache strategies for instant load times and complete offline viability.
 
 ---
 
-## 🚀 How to Run Locally
+## 🎨 Premium Visual Palette
 
-Since TrueTask uses native standard browser modules, **no build processes or installations are required**.
+TrueTask is built using custom HSL design tokens, frosted-glass filters (`backdrop-filter: blur`), glowing box-shadow borders, and micro-interactive cursor highlights:
 
-### Method 1: Direct File Launch (No Server Required)
-Simply double-click **`index.html`** to open it instantly in any modern web browser (Chrome, Firefox, Safari, Edge).
+| Element | Style Specification |
+| :--- | :--- |
+| **Theme Base** | Space-slate dark theme (`#090d16` to `#0d1527` gradient overlay) |
+| **Cards** | Translucent frost borders with elegant 1px glass overlays |
+| **Streaks** | Neon warning gradients (`#f59e0b` to `#ef4444`) |
+| **Fonts** | Outfit geometric sans-serif stack |
 
-### Method 2: Simple Local Server
-To run a local server in the workspace directory (ideal for Service Worker registration):
+---
+
+## 📂 Modular Structure
+
 ```bash
-# Python 3
+├── index.html     
+├── styles.css     
+├── app.js         
+├── manifest.json  
+├── sw.js          
+├── icon.svg       
+└── README.md      
+```
+
+---
+
+## 🚀 How to Run the App
+
+Since TrueTask relies exclusively on native clientside standard browser modules, **no local server, Node modules, or package installation steps are required**.
+
+### 💻 Direct Double-Click (Zero Install)
+Simply open the file [index.html](index.html) directly inside your preferred web browser.
+
+### 🌐 Lightweight Local Server (Optional)
+If you prefer testing local cache-first registers under active service workers, deploy a server:
+```bash
+npx serve .
+# or
 python3 -m http.server 8000
-
-# Node.js (npx serve)
-npx -y serve
 ```
-Then open `http://localhost:8000` or `http://localhost:3000` in your web browser.
-
----
-
-## 📱 Progressive Web App (PWA) Installation
-
-### On Desktop (Linux, macOS, Windows)
-1. Open TrueTask in a Chromium-based browser (Chrome, Brave, Edge).
-2. Click the **Install Icon** in the right side of the address bar, or go to Settings and click **"Install TrueTask..."**.
-3. TrueTask will install on your desktop, get its own standalone window, and show in your OS application grid.
-
-### On Mobile (Android, iOS)
-1. Open the URL in your mobile browser (**Chrome** for Android, **Safari** for iOS).
-2. Tap the browser options and select **"Add to Home Screen"**.
-3. It will install with its custom vector checkmark app icon (`icon.svg`), remove the browser address bar, and behave like a native mobile app.
-
----
-
-## 📁 File Structure
-
-```text
-  ├── index.html           
-  ├── styles.css          
-  ├── app.js              
-  ├── sw.js                
-  ├── manifest.json    
-  └── icon.svg
-```
+Then, visit `http://localhost:8000` in your browser.
